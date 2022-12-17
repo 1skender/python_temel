@@ -1,0 +1,13 @@
+l1=[[1, 2], [3, 4], [5, 6, 7]]
+l2=[]
+def reversed(x):
+    l1.reverse()
+    for i in l1:
+        if type(i)== list:
+            i.reverse()
+            l2.append(i)
+        else:
+            l2.append(i)
+    return l2
+
+print(reversed(l1))
