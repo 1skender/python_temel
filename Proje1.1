@@ -1,0 +1,11 @@
+l1 = [[1,'a',['cat'],2],[[[3]],'dog'],4,5]
+l2 = []
+def flatten(n):
+    for i in n :
+        if type(i)==list:
+            flatten(i)
+        else:
+            l2.append(i)
+    return l2
+    
+print(flatten(l1))
